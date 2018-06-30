@@ -5,9 +5,9 @@ The repository contains the following:
 1. This README.md file
 2. tidydata.txt ; containg the result of step five in the quiz.  Please use "tidydata <- read.table("tidydata.txt")" to load it, then view() in R-studio
 3. run_analysis.R ; containig the script used to develop the tidydata
-4. 
+4. codebook_mytidydata.md ; the codebook for tidydata, generated with the help of dataMaid package
 
-This is the explanation of the R script used to process the week4 assignment
+The following is the explanation of the R script used to process the week4 assignment
 of Getting and Cleaning Data course.
 The R script file is "run_analysis.R"
 Prepared by Mohamed Roshdy,  29th June, 2018
@@ -51,7 +51,7 @@ dataframes in "mysplit" list.  But it skips the first 2 columns and acts on the 
 The L function is applied to each of the dataframes in "mysplit", using sapply() function.
 the reult is a dataframe with variable names in the rows, so i transposed it using t()
 function to keep it consistent with the previous dataframes.
-The resulting dataframe is put in "tidydata"
+The resulting dataframe is put in "tidydata", each row name is a combination of a subject and activity , e.g. "2.laying" means the row contains avarages related to subject 2 when doing activity "laying"
 
 The tidydata is copied to text file "tidydata.txt"
 
